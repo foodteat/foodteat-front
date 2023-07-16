@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "dev-debug": "node --debug node_modules/.bin/nuxt",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "^3.2.3"
+  },
+  "dependencies": {
+    "@mdi/js": "^7.1.96",
+    "@nuxtjs/tailwindcss": "^6.4.1",
+    "@pinia/nuxt": "^0.4.7",
+    "axios": "^1.3.4",
+    "exceljs": "^4.3.0",
+    "flowbite": "^1.7.0",
+    "h3-formidable": "^0.2.2",
+    "numeral": "^2.0.6",
+    "pinia": "^2.0.33"
+  }
+}
