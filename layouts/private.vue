@@ -22,10 +22,11 @@
                             </svg>
                             <span class="sr-only">Toggle sidebar</span>
                         </button>
-                        <RouterLink to="/dashboard" class="flex items-center justify-between mr-4">
-                            <img src="https://flowbite.s3.amazonaws.com/logo.svg" class="mr-3 h-8" alt="FoodTeat Logo" />
+                        <RouterLink to="/dashboard" class="flex items-center justify-between md:mr-4">
+                            <img src="https://flowbite.s3.amazonaws.com/logo.svg" class="mr-1 md:mr-3 h-8"
+                                alt="FoodTeat Logo" />
                             <span
-                                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">FoodTeat</span>
+                                class="self-center text-base md:text-2xl font-semibold whitespace-nowrap dark:text-white">FoodTeat</span>
                         </RouterLink>
                         <form action="#" method="GET" class="hidden md:block md:pl-2">
                             <label for="topbar-search" class="sr-only">Search</label>
@@ -46,7 +47,7 @@
                     </div>
                     <div class="flex items-center lg:order-2">
                         <button type="button" data-drawer-toggle="drawer-navigation" aria-controls="drawer-navigation"
-                            class="p-2 mr-1 text-gray-500 rounded-lg md:hidden hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600">
+                            class="p-1 sm:p-2 sm:mr-1 text-gray-500 rounded-lg md:hidden hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600">
                             <span class="sr-only">Toggle search</span>
                             <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +58,7 @@
                         </button>
                         <!-- Notifications -->
                         <button type="button" data-dropdown-toggle="notification-dropdown"
-                            class="p-2 mr-1 text-gray-500 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600">
+                            class="p-1 sm:p-2 sm:mr-1 text-gray-500 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600">
                             <span class="sr-only">View notifications</span>
                             <!-- Bell icon -->
                             <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
@@ -237,7 +238,7 @@
                         </div>
                         <!-- Apps -->
                         <button type="button" data-dropdown-toggle="apps-dropdown"
-                            class="p-2 text-gray-500 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600">
+                            class="p-1 sm:p-2 text-gray-500 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600">
                             <span class="sr-only">View notifications</span>
                             <!-- Icon -->
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -373,7 +374,7 @@
                             </div>
                         </div>
                         <button type="button"
-                            class="flex mx-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                            class="flex md:mx-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
                             id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
                             <span class="sr-only">Open user menu</span>
                             <img class="w-8 h-8 rounded-full"
