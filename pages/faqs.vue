@@ -1,5 +1,3 @@
 <template>
-    <Faqs />
+  <Faqs />
 </template>
-  
-  

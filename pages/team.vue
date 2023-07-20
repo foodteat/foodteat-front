@@ -1,3 +1,3 @@
 <template>
-    <OurTeam />
+  <OurTeam />
 </template>

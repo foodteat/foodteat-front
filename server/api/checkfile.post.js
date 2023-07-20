@@ -104,24 +104,9 @@ export default defineEventHandler(async (event) => {
       }
     })
     const response = []
-    verifyIfExistAndSameAmount(
-      codesBoletaCompare,
-      codesBoleta,
-      response,
-      "Boletas"
-    )
-    verifyIfExistAndSameAmount(
-      codesCVCompare,
-      codesCV,
-      response,
-      "Comprobante de Ventas"
-    )
-    verifyIfExistAndSameAmount(
-      codesFacturaCompare,
-      codesFactura,
-      response,
-      "Facturas"
-    )
+    verifyIfExistAndSameAmount(codesBoletaCompare, codesBoleta, response, "Boletas")
+    verifyIfExistAndSameAmount(codesCVCompare, codesCV, response, "Comprobante de Ventas")
+    verifyIfExistAndSameAmount(codesFacturaCompare, codesFactura, response, "Facturas")
     verifyIfExistAndSameAmount(
       codesCompCreditoCompare,
       codesCompCredito,
@@ -142,10 +127,7 @@ const searchCodesAndPush = (col, arrayToPush, codesCompCredito, worksheet) => {
     if (index !== 1 && index !== 2) {
       let value = c.value
       if (value && value !== "") {
-        value =
-          typeof value === "string"
-            ? parseInt(value.replace("\n", ""), 10)
-            : value
+        value = typeof value === "string" ? parseInt(value.replace("\n", ""), 10) : value
         const objToPush = {
           code: value,
           amount: worksheet.getCell(`G${index}`).value,
@@ -159,12 +141,7 @@ const searchCodesAndPush = (col, arrayToPush, codesCompCredito, worksheet) => {
   })
 }
 
-const verifyIfExistAndSameAmount = (
-  arrayCompare,
-  arrayCodes,
-  arrayToPush,
-  type
-) => {
+const verifyIfExistAndSameAmount = (arrayCompare, arrayCodes, arrayToPush, type) => {
   arrayCompare.forEach((value, index) => {
     const infoBoleta = arrayCodes.find((item) => item.code === value.code)
     if (!infoBoleta || infoBoleta.amount !== value.amount) {
