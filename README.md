@@ -25,6 +25,16 @@ Start the development server on http://localhost:3000
 npm run dev
 ```
 
+## Using Docker
+In the project's root directory:
+
+```bash
+# Build docker image
+docker image build -t foodteat .
+# Run container
+docker container run -p 3000:3000 foodteat
+```
+
 ## Production
 
 Build the application for production:
